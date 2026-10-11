@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo noupdate="1">
     <function model="ir.model.access" name="write">
         <value
@@ -7,14 +7,14 @@
         <value eval="{'active': False }" />
     </function>
 
-    <record model="ir.module.category" id="module_category_repair">
+    <record id="module_category_repair" model="ir.module.category">
         <field name="name">Repair</field>
-        <field name="sequence">25</field>
+        <field name="sequence" eval="25" />
     </record>
-    <record model="res.groups.privilege" id="res_groups_privilege_repair">
+    <record id="res_groups_privilege_repair" model="res.groups.privilege">
         <field name="name">Repair</field>
         <field name="category_id" ref="module_category_repair" />
-        <field name="sequence">7</field>
+        <field name="sequence" eval="7" />
     </record>
 
     <record id="group_repair_user" model="res.groups">

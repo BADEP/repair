@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <record model="ir.ui.menu" id="repair.menu_repair_order">
+    <record id="repair.menu_repair_order" model="ir.ui.menu">
         <field
             name="group_ids"
             eval="[(6, 0, [ref('repair_security.group_repair_user')])]"
