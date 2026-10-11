@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <record id="repair_service_rule_multi_company" model="ir.rule">
         <field name="name">Repair Service multi-company</field>
