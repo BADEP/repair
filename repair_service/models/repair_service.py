@@ -20,7 +20,7 @@ class RepairService(models.Model):
         precompute=True,
     )
     product_id = fields.Many2one(
-        "product.product", "Product", domain=[("type", "=", "service")], required=True
+        "product.product", domain=[("type", "=", "service")], required=True
     )
     relative_uom_id = fields.Many2one(related="product_id.uom_id.relative_uom_id")
     product_uom = fields.Many2one(

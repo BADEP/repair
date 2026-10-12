@@ -1,0 +1,3 @@
+id,name,model_id,group_id/id,operation,domain
+access_repair_service_user,repair.service user,repair.service,stock.group_stock_user,crud,
+repair_service_rule_multi_company,Repair Service multi-company,repair.service,,crud,"[('repair_id.company_id', 'in', company_ids)]"

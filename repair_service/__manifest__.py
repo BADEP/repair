@@ -3,19 +3,17 @@
 
 {
     "name": "Repair Service",
-    "summary": """
-        Adds services to repair orders, so that they can be added
-        as sale order lines.
-    """,
-    "version": "19.0.1.0.0",
+    "summary": (
+        "Adds services to repair orders, so that they can be added as sale order lines."
+    ),
+    "version": "20.0.1.0.0",
     "category": "Repair",
     "website": "https://github.com/OCA/repair",
     "author": "ForgeFlow, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "depends": ["repair"],
     "data": [
-        "security/ir.model.access.csv",
-        "security/ir_rule.xml",
         "views/repair_views.xml",
+        "security/ir.access.csv",
     ],
 }
