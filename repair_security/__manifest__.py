@@ -3,7 +3,7 @@
 {
     "name": "Repair Security",
     "summary": "Create security groups for Repair",
-    "version": "19.0.1.0.0",
+    "version": "20.0.1.0.0",
     "category": "Manufacturing",
     "website": "https://github.com/OCA/repair",
     "author": "ForgeFlow S.L., Odoo Community Association (OCA)",
@@ -12,8 +12,8 @@
     "depends": ["repair"],
     "data": [
         "security/repair_security.xml",
-        "security/ir.model.access.csv",
         "views/repair_views.xml",
+        'security/ir.access.csv',
     ],
     "post_init_hook": "post_init_hook",
 }
